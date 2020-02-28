@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.primary{
+    background: rgb(22, 202, 247) !important;
+}
+
+.landing-page{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    color: rgb(22, 202, 247)
+}
