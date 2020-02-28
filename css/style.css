@@ -4,12 +4,12 @@ body{
 }
 
 .primary{
-    background: rgb(22, 202, 247) !important;
+    /* background: rgb(22, 202, 247) !important; */
 }
 
 .landing-page{
     height: 90vh;
     display: flex;
     align-items: center;
-    color: rgb(22, 202, 247)
+    /* color: rgb(22, 202, 247) */
 }
