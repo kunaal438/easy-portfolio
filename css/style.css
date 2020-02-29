@@ -11,10 +11,30 @@ nav{
     height: 90vh;
     display: flex;
     align-items: center;
-    background: rgb(255, 186, 37);
+    background: #ffc107;
     overflow: hidden;
     position: relative;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.landing-page::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.03;
+    z-index: 2;
+}
+
+.landing-page .header{
+    z-index: 1;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-25%);
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .landing-page .first{
@@ -25,7 +45,7 @@ nav{
     top: -100px;
     border-radius: 50%;  
     background: rgba(255, 255, 255, 0.87);
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
 }
 
 .landing-page .second{
@@ -35,8 +55,8 @@ nav{
     left: -40px;
     bottom: -40px;
     border-radius: 50%;  
-    background: rgba(255, 255, 255, 0.87);
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.973);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
 }
 
 .landing-page .first::before{
@@ -47,6 +67,17 @@ nav{
     right: 50px;
     bottom: 50px;
     border-radius: 50%;  
-    background: rgb(255, 186, 37);
+    background: #ffc107;
     /* background: rgba(255, 255, 255, 0.068); */
+}
+
+@media only screen and (max-width:996px){
+    .landing-page .first{
+        right: -200px;
+        top: -200px;
+    }
+    .landing-page .second{
+        left: -100px;
+        bottom: -100px;
+    }
 }
