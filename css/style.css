@@ -3,8 +3,19 @@ body{
     padding: 0;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #ffc107;
+}
+
 nav{
     z-index: 9999;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .landing-page{
@@ -69,6 +80,32 @@ nav{
     border-radius: 50%;  
     background: #ffc107;
     /* background: rgba(255, 255, 255, 0.068); */
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.mt-6{
+    margin-top: 60px;
+}
+
+.mb-6{
+    margin-bottom: 60px;
+}
+
+.margined{
+    margin: 20px 0;
+}
+
+.project-img{
+    height: 100%;background: rgb(255,193,7);
+    background: linear-gradient(90deg, rgba(255,193,7,1) 0%, rgba(255,252,0,1) 100%);
+}
+
+.project-img img{
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width:996px){
