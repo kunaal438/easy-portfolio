@@ -4,14 +4,6 @@ let li = [
     document.getElementById('about'),
     document.getElementById('contact'),
 ];
-// console.log(li)
-
-// let activeList = li.map(i => {
-//     return li[i].addEventListener('click', () => {
-//         li.classList.remove('active');
-//         li[i].classList.add('active');
-//     })
-// })
 
 function removingClass(){
     for (var i = 0; i < li.length;i++){
@@ -27,3 +19,9 @@ let liArray = li.map((item) => {
         this.classList.add("active");
     })
 });
+
+$('.tilt-card').tilt({
+    maxTilt : 5,
+    glare: true,
+    maxGlare: 0.4
+})

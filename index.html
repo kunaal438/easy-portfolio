@@ -29,10 +29,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="project" href="#">projects</a>
+                        <a class="nav-link" id="project" href="#project-window">projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about" href="#">about us</a>
+                        <a class="nav-link" id="about" href="#about-window">about us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="contact" href="#">contact us</a>
@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <header class="container-fluid text-capitalize text-white landing-page">
+    <header class="container-fluid text-capitalize text-white landing-page" id="home-window">
         <div class="container">
             <span class="first"></span>
             <span class="second"></span>
@@ -53,7 +53,7 @@
         <!-- <h5>i am web developer</h5> -->
     </header>
 
-    <section class="container p-4 project-section mb-6">
+    <section class="container p-4 project-section mb-6" id="project-window">
         <h3 class="display-4 text-center text-warning bold mt-6 mb-6">Projects</h3>
         <div class="row pt-4">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -63,7 +63,7 @@
                 <a class="btn btn-outline-warning text-warning mb-4" type="button">Read more</a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="project-img">
+                <div class="project-img tilt-card" data-tilt>
                     <img src="" alt="">
                 </div>
             </div>
@@ -71,7 +71,7 @@
         <hr>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="project-img">
+                <div class="project-img tilt-card" data-tilt>
                     <img src="" alt="">
                 </div>
             </div>
@@ -91,7 +91,7 @@
                 <a class="btn btn-outline-warning text-warning mb-4" type="button">Read more</a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="project-img">
+                <div class="project-img tilt-card" data-tilt>
                     <img src="" alt="">
                 </div>
             </div>
@@ -99,7 +99,7 @@
         <hr>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="project-img">
+                <div class="project-img tilt-card" data-tilt>
                     <img src="" alt="">
                 </div>
             </div>
@@ -113,9 +113,15 @@
         <hr>
     </section>
 
+    <section class="container p-4 mb-6" id="about-window">
+        <h3 class="display-4 text-center text-warning bold mt-6 mb-6">About us</h3>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="tilt.jquery.js"></script>
 
     <script src="index.js"></script>
 
