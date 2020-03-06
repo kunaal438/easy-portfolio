@@ -11,7 +11,7 @@ function removingClass(){
     }
 }
 
-window.addEventListener('load', () => li[0].classList.add('active'));
+window.addEventListener('load', () => navItemClasses());
 
 $('.tilt-card').tilt({
     maxTilt : 5,
@@ -23,19 +23,25 @@ $('.tilt-card').tilt({
 
 
 window.addEventListener('scroll', () => {
+    navItemClasses();
+})
+function navItemClasses() {
     var scrollPos = window.scrollY;
-
-    if (scrollPos >= 618 && scrollPos < 2405){
+    if (scrollPos >= 618 && scrollPos < 2405) {
         removingClass();
         li[1].classList.add('active');
-    } else if (scrollPos >= 2405 && scrollPos < 3210) {
+    }
+    else if (scrollPos >= 2405 && scrollPos < 3210) {
         removingClass();
         li[2].classList.add('active');
-    } else if (scrollPos >= 3210) {
+    }
+    else if (scrollPos >= 3210) {
         removingClass();
         li[3].classList.add('active');
-    } else{
+    }
+    else {
         removingClass();
         li[0].classList.add('active');
     }
-})
+}
+
