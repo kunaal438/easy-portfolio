@@ -13,15 +13,29 @@ function removingClass(){
 
 window.addEventListener('load', () => li[0].classList.add('active'));
 
-let liArray = li.map((item) => {
-    item.addEventListener('click', function(){
-        removingClass();
-        this.classList.add("active");
-    })
-});
-
 $('.tilt-card').tilt({
     maxTilt : 5,
     glare: true,
     maxGlare: 0.4
+})
+
+//////////////////////////////////////nav item class change on scroll/////////////////////////////////////////////////////
+
+
+window.addEventListener('scroll', () => {
+    var scrollPos = window.scrollY;
+
+    if (scrollPos >= 618 && scrollPos < 2405){
+        removingClass();
+        li[1].classList.add('active');
+    } else if (scrollPos >= 2405 && scrollPos < 3210) {
+        removingClass();
+        li[2].classList.add('active');
+    } else if (scrollPos >= 3210) {
+        removingClass();
+        li[3].classList.add('active');
+    } else{
+        removingClass();
+        li[0].classList.add('active');
+    }
 })
